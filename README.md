@@ -112,7 +112,7 @@ soft-ui-dashboard
     │   │   └── soft-ui-dashboard.min.js
     │   └── scss
     │       ├── soft-ui-dashboard
-    │       └── soft-ui-dashboard.scss
+    │       └── style.scss
     ├── docs
     │   ├── documentation.html
     ├── pages

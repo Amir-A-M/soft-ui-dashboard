@@ -9,7 +9,7 @@ var Paths = {
   HERE: './',
   DIST: 'dist/',
   CSS: './assets/css/',
-  SCSS_TOOLKIT_SOURCES: './assets/scss/soft-ui-dashboard.scss',
+  SCSS_TOOLKIT_SOURCES: './assets/scss/style.scss',
   SCSS: './assets/scss/**/**'
 };
 
