@@ -2562,7 +2562,7 @@ textarea.form-control-lg {
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
-  float: left;
+  float: right;
   margin-left: -1.73em;
 }
 
@@ -5202,6 +5202,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   border-radius: var(--bs-list-group-border-radius);
 }
@@ -22563,6 +22564,14 @@ pre[class*=language-] {
     overflow: auto !important;
   }
 }
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 0.4rem;
