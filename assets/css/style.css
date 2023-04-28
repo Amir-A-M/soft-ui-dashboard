@@ -2558,12 +2558,12 @@ textarea.form-control-lg {
 .form-check {
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.73em;
+  padding-right: 1.73em;
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
   float: right;
-  margin-left: -1.73em;
+  margin-right: -1.73em;
 }
 
 .form-check-reverse {
@@ -2638,11 +2638,11 @@ textarea.form-control-lg {
 }
 
 .form-switch {
-  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .form-switch .form-check-input {
   width: 2.5rem;
-  margin-left: -3rem;
+  margin-right: -3rem;
   background-image: none;
   background-position: left center;
   border-radius: 2.5rem;
@@ -4180,7 +4180,7 @@ textarea.form-control-lg {
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   list-style: none;
 }
@@ -18327,7 +18327,7 @@ label,
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #344767;
-  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .form-control.is-invalid:focus {

@@ -5,12 +5,12 @@
 .form-check {
   display: block;
   min-height: $form-check-min-height;
-  padding-left: $form-check-padding-start;
+  padding-right: $form-check-padding-start;
   margin-bottom: $form-check-margin-bottom;
 
   .form-check-input {
     float: right;
-    margin-left: $form-check-padding-start * -1;
+    margin-right: $form-check-padding-start * -1;
   }
 }
 
@@ -118,11 +118,11 @@
 //
 
 .form-switch {
-  padding-left: $form-switch-padding-start;
+  padding-right: $form-switch-padding-start;
 
   .form-check-input {
     width: $form-switch-width;
-    margin-left: $form-switch-padding-start * -1;
+    margin-right: $form-switch-padding-start * -1;
     background-image: escape-svg($form-switch-bg-image);
     background-position: left center;
     @include border-radius($form-switch-border-radius);
