@@ -107,9 +107,9 @@ soft-ui-dashboard
     │   ├── js
     │   │   ├── core
     │   │   ├── plugins
-    │   │   └── soft-ui-dashboard.js
-    │   │   └── soft-ui-dashboard.js.map
-    │   │   └── soft-ui-dashboard.min.js
+    │   │   └── app.js
+    │   │   └── app.js.map
+    │   │   └── app.min.js
     │   └── scss
     │       ├── soft-ui-dashboard
     │       └── style.scss
