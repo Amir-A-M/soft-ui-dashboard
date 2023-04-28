@@ -18,6 +18,7 @@
     .progress {
       height: $table-progress-height;
       width: $table-progress-width;
+      max-width: 100%;
       margin: $table-progress-margin; 
     }
   }
