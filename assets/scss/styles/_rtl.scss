@@ -91,7 +91,10 @@
       border-right: $input-border-width solid $input-border-color;
     }
 
-    & > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    &
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+        .valid-feedback
+      ):not(.invalid-tooltip):not(.invalid-feedback) {
       margin-right: -1px;
       border-top-left-radius: $input-border-radius;
       border-bottom-left-radius: $input-border-radius;
@@ -100,9 +103,42 @@
     }
 
     &:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
-    &:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    &:not(.has-validation)
+      > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
       border-top-right-radius: $input-border-radius;
       border-bottom-right-radius: $input-border-radius;
+    }
+    
+    &.search {
+      flex-direction: row-reverse;
+
+      .input-group-text {
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-left: $input-border-width solid $input-border-color;
+      }
+
+      &
+        > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+          .valid-feedback
+        ):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-right: -1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
+        border-right: $input-border-width solid $input-border-color !important;
+      }
+
+      &:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+      &:not(.has-validation)
+        > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        border-top-left-radius: $input-border-radius;
+        border-bottom-left-radius: $input-border-radius;
+      }
     }
   }
 }

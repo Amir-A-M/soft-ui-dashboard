@@ -20238,6 +20238,28 @@ html {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
+.rtl .input-group.search {
+  flex-direction: row-reverse;
+}
+.rtl .input-group.search .input-group-text {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: 1px solid #d2d6da;
+}
+.rtl .input-group.search > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-right: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  border-right: 1px solid #d2d6da !important;
+}
+.rtl .input-group.search:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .rtl .input-group.search:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
 
 .btn.btn-facebook {
   background-color: #3b5998;
