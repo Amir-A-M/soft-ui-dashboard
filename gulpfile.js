@@ -6,6 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var open = require('gulp-open');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+const cleanCSS = require('gulp-clean-css');
 
 var Paths = {
   HERE: './',
@@ -22,6 +23,8 @@ gulp.task('compile-scss', function() {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write(Paths.HERE))
     .pipe(gulp.dest(Paths.CSS));
 });
